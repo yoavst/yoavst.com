@@ -36,9 +36,3 @@ Header set Cache-Control "max-age=290304000, public"
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
-
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^server\.yoavst\.com [NC]
-RewriteRule ^(.*)$ http://141.226.240.31:3000/$1 [R=301,L]
-
